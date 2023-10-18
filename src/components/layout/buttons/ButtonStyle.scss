@@ -1,0 +1,793 @@
+@import "../../../assets/styles/common.scss";
+
+//BOTONES ESTILOS
+
+//Primary Azul
+.btn.btn-primary {
+  color: #ffffff;
+  background-color: #023047;
+  border-color: #d1d1d1;
+  border-radius: 0.4rem !important;
+
+  svg {
+    width: 1.2rem;
+    height: auto;
+    margin-left: 0.1rem;
+  }
+}
+
+.btn.btn-primary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-primary:focus:not(.btn-text),
+.btn.btn-primary.focus:not(.btn-text) {
+  color: #023047;
+  background-color: #ffffff;
+  border-color: #023047;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn.btn-primary.dropdown-toggle,
+.show .btn.btn-primary.btn-dropdown {
+  color: #ffffff;
+  background-color: #023047;
+  border-color: #d1d1d1;
+}
+
+.btn.btn-primary.dropdown-toggle:after {
+  color: #d1d1d1;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-primary:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-primary.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-primary.btn-dropdown.dropdown-toggle:after {
+  color: #d1d1d1;
+}
+
+.btn.btn-primary:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-primary:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-primary.focus:not(.btn-text).dropdown-toggle:after {
+  color: #d1d1d1;
+}
+
+//Secondary con borde Azul
+.btn.btn-secondary {
+  color: #023047;
+  background-color: #ffffff;
+  border-color: #023047;
+  border-radius: 0.4rem !important;
+}
+
+.btn.btn-secondary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-secondary:focus:not(.btn-text),
+.btn.btn-secondary.focus:not(.btn-text) {
+  color: #ffffff;
+  background-color: #023047;
+  border-color: #023047;
+}
+
+.btn.btn-secondary:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn.btn-secondary.dropdown-toggle,
+.show .btn.btn-secondary.btn-dropdown {
+  color: #023047;
+  background-color: #ffffff;
+  border-color: #023047;
+}
+
+.btn.btn-secondary.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-secondary:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-secondary:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-secondary.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-secondary.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-secondary:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-secondary:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-secondary.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Red primary
+.btn.btn-red-primary {
+  color: $blanco;
+  background-color: $rojo;
+  border-color: $rojo;
+  border-radius: 0.4rem !important;
+}
+
+.btn.btn-red-primary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-red-primary:focus:not(.btn-text),
+.btn.btn-red-primary.focus:not(.btn-text) {
+  color: $rojo;
+  background-color: $blanco;
+  border-color: $rojo;
+}
+
+.btn.btn-red-primary:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-red-primary:not(:disabled):not(.disabled).active,
+.show > .btn.btn-red-primary.dropdown-toggle,
+.show .btn.btn-red-primary.btn-dropdown {
+  color: $blanco;
+  background-color: $rojo;
+  border-color: $rojo;
+}
+
+.btn.btn-red-primary.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-red-primary:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-red-primary:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-red-primary.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-red-primary.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-red-primary:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-red-primary:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-red-primary.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Red secondary
+.btn.btn-red-secondary {
+  color: $rojo;
+  background-color: $blanco;
+  border-color: $rojo;
+  border-radius: 0.4rem !important;
+}
+
+.btn.btn-red-secondary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-red-secondary:focus:not(.btn-text),
+.btn.btn-red-secondary.focus:not(.btn-text) {
+  color: $blanco;
+  background-color: $rojo;
+  border-color: $rojo;
+}
+
+.btn.btn-red-secondary:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-red-secondary:not(:disabled):not(.disabled).active,
+.show > .btn.btn-red-secondary.dropdown-toggle,
+.show .btn.btn-red-secondary.btn-dropdown {
+  color: $rojo;
+  background-color: $blanco;
+  border-color: $rojo;
+}
+
+.btn.btn-red-secondary.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-red-secondary:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-red-secondary:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-red-secondary.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-red-secondary.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-red-secondary:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-red-secondary:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-red-secondary.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Green primary
+.btn.btn-green-primary {
+  color: $blanco;
+  background-color: $verde;
+  border-color: $verde;
+  border-radius: 0.4rem !important;
+}
+
+.btn.btn-green-primary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-green-primary:focus:not(.btn-text),
+.btn.btn-green-primary.focus:not(.btn-text) {
+  color: $verde;
+  background-color: $blanco;
+  border-color: $verde;
+}
+
+.btn.btn-green-primary:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-green-primary:not(:disabled):not(.disabled).active,
+.show > .btn.btn-green-primary.dropdown-toggle,
+.show .btn.btn-green-primary.btn-dropdown {
+  color: $verde;
+  background-color: $blanco;
+  border-color: $verde;
+}
+
+.btn.btn-green-primary.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-green-primary:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-green-primary:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-green-primary.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-green-primary.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-green-primary:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-green-primary:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-green-primary.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Green secondary
+.btn.btn-green-secondary {
+  color: $verde;
+  background-color: $blanco;
+  border-color: $verde;
+  border-radius: 0.4rem !important;
+}
+
+.btn.btn-green-secondary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-green-secondary:focus:not(.btn-text),
+.btn.btn-green-secondary.focus:not(.btn-text) {
+  color: $blanco;
+  background-color: $verde;
+  border-color: $verde;
+}
+
+.btn.btn-green-secondary:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-green-secondary:not(:disabled):not(.disabled).active,
+.show > .btn.btn-green-secondary.dropdown-toggle,
+.show .btn.btn-green-secondary.btn-dropdown {
+  color: $verde;
+  background-color: $blanco;
+  border-color: $verde;
+}
+
+.btn.btn-green-secondary.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-green-secondary-:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-green-secondary:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-green-secondary.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-green-secondary.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-green-secondary:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-green-secondary:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-green-secondary.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//White
+.btn.btn-white {
+  color: $azul-4;
+  background-color: $blanco;
+  border-color: $blanco;
+  border-radius: 0.4rem !important;
+}
+
+.btn.btn-white:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-white:focus:not(.btn-text),
+.btn.btn-white.focus:not(.btn-text) {
+  color: $blanco;
+  background-color: $azul-4;
+  border-color: $azul-4;
+}
+
+.btn.btn-white:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-white:not(:disabled):not(.disabled).active,
+.show > .btn.btn-white.dropdown-toggle,
+.show .btn.btn-white.btn-dropdown {
+  color: $azul-4;
+  background-color: $blanco;
+  border-color: $blanco;
+}
+
+.btn.btn-white.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-white:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-white:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-white.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-white.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-white:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-white:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-white.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Transparent
+.btn.btn-transparent {
+  color: $azul-4;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-radius: 0.4rem !important;
+}
+
+.btn.btn-transparent:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-transparent:focus:not(.btn-text),
+.btn.btn-transparent.focus:not(.btn-text) {
+  color: $azul-4;
+  background-color: transparent !important;
+  border-color: $azul-4;
+}
+
+.btn.btn-transparent:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-transparent:not(:disabled):not(.disabled).active,
+.show > .btn.btn-transparent.dropdown-toggle,
+.show .btn.btn-transparent.btn-dropdown {
+  color: $azul-4;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn.btn-transparent.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-transparent:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-transparent:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-transparent.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-transparent.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-transparent-:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-transparent-:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-transparent.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//BTN small
+//Primary Azul Chico
+.btn.btn-primary-small {
+  color: #ffffff;
+  background-color: #023047;
+  border-color: #d1d1d1;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-primary-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-primary-small:focus:not(.btn-text),
+.btn.btn-primary-small.focus:not(.btn-text) {
+  color: #023047;
+  background-color: #ffffff;
+  border-color: #023047;
+}
+
+.btn.btn-primary-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-primary-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-primary-small.dropdown-toggle,
+.show .btn.btn-primary-small.btn-dropdown {
+  color: #ffffff;
+  background-color: #023047;
+  border-color: #d1d1d1;
+}
+
+.btn.btn-primary-small.dropdown-toggle:after {
+  color: #d1d1d1;
+}
+
+.btn.btn-primary-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-primary-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-primary-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-primary-small.btn-dropdown.dropdown-toggle:after {
+  color: #d1d1d1;
+}
+
+.btn.btn-primary-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-primary-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-primary-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: #d1d1d1;
+}
+
+//Secondary con borde Azul Small
+.btn.btn-secondary-small {
+  color: #023047;
+  background-color: #ffffff;
+  border-color: #023047;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-secondary-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-secondary-small:focus:not(.btn-text),
+.btn.btn-secondary-small.focus:not(.btn-text) {
+  color: #ffffff;
+  background-color: #023047;
+  border-color: #023047;
+}
+
+.btn.btn-secondary-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-secondary-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-secondary-small.dropdown-toggle,
+.show .btn.btn-secondary-small.btn-dropdown {
+  color: #023047;
+  background-color: #ffffff;
+  border-color: #023047;
+}
+
+.btn.btn-secondary-small.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-secondary-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-secondary-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-secondary-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-secondary-small.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-secondary-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-secondary-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-secondary-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Red primary
+.btn.btn-red-primary-small {
+  color: $blanco;
+  background-color: $rojo;
+  border-color: $rojo;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-red-primary-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-red-primary-small:focus:not(.btn-text),
+.btn.btn-red-primary-small.focus:not(.btn-text) {
+  color: $rojo;
+  background-color: $blanco;
+  border-color: $rojo;
+}
+
+.btn.btn-red-primary-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-red-primary-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-red-primary-small.dropdown-toggle,
+.show .btn.btn-red-primary-small.btn-dropdown {
+  color: $blanco;
+  background-color: $rojo;
+  border-color: $rojo;
+}
+
+.btn.btn-red-primary-small.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-red-primary-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-red-primary-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-red-primary-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-red-primary-small.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-red-primary-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-red-primary-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-red-primary-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Red secondary-small
+.btn.btn-red-secondary-small {
+  color: $rojo;
+  background-color: $blanco;
+  border-color: $rojo;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-red-secondary-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-red-secondary-small:focus:not(.btn-text),
+.btn.btn-red-secondary-small.focus:not(.btn-text) {
+  color: $blanco;
+  background-color: $rojo;
+  border-color: $rojo;
+}
+
+.btn.btn-red-secondary-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-red-secondary-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-red-secondary-small.dropdown-toggle,
+.show .btn.btn-red-secondary-small.btn-dropdown {
+  color: $rojo;
+  background-color: $blanco;
+  border-color: $rojo;
+}
+
+.btn.btn-red-secondary-small.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-red-secondary-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-red-secondary-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-red-secondary-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-red-secondary-small.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-red-secondary-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-red-secondary-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-red-secondary-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Green primary
+.btn.btn-green-primary-small {
+  color: $blanco;
+  background-color: $verde;
+  border-color: $verde;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-green-primary-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-green-primary-small:focus:not(.btn-text),
+.btn.btn-green-primary-small.focus:not(.btn-text) {
+  color: $verde;
+  background-color: $blanco;
+  border-color: $verde;
+}
+
+.btn.btn-green-primary-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-green-primary-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-green-primary-small.dropdown-toggle,
+.show .btn.btn-green-primary-small.btn-dropdown {
+  color: $verde;
+  background-color: $blanco;
+  border-color: $verde;
+}
+
+.btn.btn-green-primary-small.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-green-primary-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-green-primary-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-green-primary-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-green-primary-small.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-green-primary-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-green-primary-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-green-primary-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Green secondary-small
+.btn.btn-green-secondary-small {
+  color: $verde;
+  background-color: $blanco;
+  border-color: $verde;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-green-secondary-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-green-secondary-small:focus:not(.btn-text),
+.btn.btn-green-secondary-small.focus:not(.btn-text) {
+  color: $blanco;
+  background-color: $verde;
+  border-color: $verde;
+}
+
+.btn.btn-green-secondary-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-green-secondary-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-green-secondary-small.dropdown-toggle,
+.show .btn.btn-green-secondary-small.btn-dropdown {
+  color: $verde;
+  background-color: $blanco;
+  border-color: $verde;
+}
+
+.btn.btn-green-secondary-small.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-green-secondary-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-green-secondary-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-green-secondary-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-green-secondary-small.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-green-secondary-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-green-secondary-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-green-secondary-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//White
+.btn.btn-white-small {
+  color: $azul-4;
+  background-color: $blanco;
+  border-color: $blanco;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-white-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-white-small:focus:not(.btn-text),
+.btn.btn-white-small.focus:not(.btn-text) {
+  color: $blanco;
+  background-color: $azul-4;
+  border-color: $azul-4;
+}
+
+.btn.btn-white-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-white-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-white-small.dropdown-toggle,
+.show .btn.btn-white-small.btn-dropdown {
+  color: $azul-4;
+  background-color: $blanco;
+  border-color: $blanco;
+}
+
+.btn.btn-white-small.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-white-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-white-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-white-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-white-small.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-white-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-white-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-white-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Transparent
+.btn.btn-transparent-small {
+  color: $azul-4;
+  background-color: transparent-small !important;
+  border-color: transparent-small;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-transparent-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-transparent-small:focus:not(.btn-text),
+.btn.btn-transparent-small.focus:not(.btn-text) {
+  color: $azul-4;
+  background-color: transparent-small !important;
+  border-color: $azul-4;
+}
+
+.btn.btn-transparent-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-transparent-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-transparent-small.dropdown-toggle,
+.show .btn.btn-transparent-small.btn-dropdown {
+  color: $azul-4;
+  background-color: transparent-small;
+  border-color: transparent-small;
+}
+
+.btn.btn-transparent-small.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-transparent-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-transparent-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-transparent-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-transparent-small.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-transparent-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-transparent-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-transparent-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Secondary con borde Amarillo
+.btn.btn-yellow-secondary {
+  color: #ffb703;
+  background-color: #ffffff;
+  border-color: #ffb703;
+  border-radius: 0.4rem !important;
+}
+
+.btn.btn-yellow-secondary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-yellow-secondary:focus:not(.btn-text),
+.btn.btn-yellow-secondary.focus:not(.btn-text) {
+  color: #ffffff;
+  background-color: #ffb703;
+  border-color: #ffb703;
+}
+
+.btn.btn-yellow-secondary:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-yellow-secondary:not(:disabled):not(.disabled).active,
+.show > .btn.btn-yellow-secondary.dropdown-toggle,
+.show .btn.btn-yellow-secondary.btn-dropdown {
+  color: #ffb703;
+  background-color: #ffffff;
+  border-color: #ffb703;
+}
+
+.btn.btn-yellow-secondary.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-yellow-secondary:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-yellow-secondary:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-yellow-secondary.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-yellow-secondary.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-yellow-secondary:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-yellow-secondary:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-yellow-secondary.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+//Yellow primary
+.btn.btn-yellow-primary-small {
+  color: $blanco;
+  background-color: #ffb703;
+  border-color: #ffb703;
+  border-radius: 0.5rem !important;
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.btn.btn-yellow-primary-small:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-yellow-primary-small:focus:not(.btn-text),
+.btn.btn-yellow-primary-small.focus:not(.btn-text) {
+  color: #ffb703;
+  background-color: $blanco;
+  border-color: #ffb703;
+}
+
+.btn.btn-yellow-primary-small:not(:disabled):not(.disabled):active:not(.btn-text),
+.btn.btn-yellow-primary-small:not(:disabled):not(.disabled).active,
+.show > .btn.btn-yellow-primary-small.dropdown-toggle,
+.show .btn.btn-yellow-primary-small.btn-dropdown {
+  color: #ffb703;
+  background-color: $blanco;
+  border-color: #ffb703;
+}
+
+.btn.btn-yellow-primary-small.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-yellow-primary-small:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after,
+.btn.btn-yellow-primary-small:not(:disabled):not(.disabled).active.dropdown-toggle:after,
+.show > .btn.btn-yellow-primary-small.dropdown-toggle.dropdown-toggle:after,
+.show .btn.btn-yellow-primary-small.btn-dropdown.dropdown-toggle:after {
+  color: $borde-gris;
+}
+
+.btn.btn-yellow-primary-small:hover:not(.btn-text):not(:disabled):not(.disabled).dropdown-toggle:after,
+.btn.btn-yellow-primary-small:focus:not(.btn-text).dropdown-toggle:after,
+.btn.btn-yellow-primary-small.focus:not(.btn-text).dropdown-toggle:after {
+  color: $borde-gris;
+}

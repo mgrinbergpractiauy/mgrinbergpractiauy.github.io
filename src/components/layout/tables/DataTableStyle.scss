@@ -1,0 +1,154 @@
+@import "../../../assets/styles/common.scss";
+
+// Datatable Estilo Borde
+
+.tablasEstiloBorde {
+  td:last-child,
+  th:last-child {
+    border-radius: 0 10px 10px 0;
+    border: 1px solid $gris-1;
+    border-width: 1px 1px 1px 0px;
+  }
+}
+
+.tablasEstiloBorde td:first-child,
+F th:first-child {
+  border-radius: 10px 0 0 10px;
+  border: 1px solid $gris-1;
+  border-width: 1px 0px 1px 1px;
+}
+
+.tablasEstiloBorde table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.tablasEstiloBorde td {
+  // border: solid 1px #000;
+  border: 1px solid $gris-1;
+  border-width: 1px 0px 1px 0;
+  // padding: 1rem;
+}
+
+.tablasEstiloBorde th {
+  // border: solid 1px #000;
+  border: 1px solid $gris-1;
+  border-width: 1px 0px 1px 0;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.tablasEstiloBorde .MuiTableBody-root tr:first-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.tablasEstiloBorde .MuiTableBody-root tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+/* Round Corner for BOTTOM RIGHT COLUMN */
+
+.tablasEstiloBorde.MuiTableBody-root tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.tablasEstiloBorde .MuiTableRow-root {
+  min-height: 10px;
+}
+
+.tablasEstiloBorde .MuiTable-root {
+  padding-right: 0.5rem !important;
+  // background-color: $azul-4  !important;
+}
+
+//hover
+.tablasEstiloBorde .MuiTableRow-root.MuiTableRow-hover:hover {
+  background-color: $azul-4;
+  color: $blanco;
+
+  svg {
+    color: $blanco !important;
+    fill: $blanco !important;
+  }
+
+  span {
+    color: $blanco !important;
+  }
+
+  p {
+    color: $blanco !important;
+  }
+}
+
+//Datatable chico sin bordes
+.tablaSinbordesSmall .MuiTableCell-root {
+  font-size: 0.85rem !important;
+  padding-left: 0.5rem !important;
+  border-bottom: none;
+}
+
+.tablaSinbordesSmall .MuiTableRow-root {
+  height: 10px !important;
+}
+
+//Datatable sin bordes
+.tablaSinbordes .MuiTableCell-root {
+  padding-left: 0.5rem !important;
+  border-bottom: none;
+}
+
+//Datatable filtro
+.tablaFiltro .MuiTableCell-root {
+  display: table-cell;
+  padding: 0 0 0 1rem !important;
+  font-size: 0.9rem !important;
+  text-align: left;
+  font-weight: 400;
+  line-height: 2rem !important;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  letter-spacing: 0.01071em;
+  vertical-align: inherit;
+}
+
+//Datatable Intercalado
+.tablaIntercaladoColor {
+  td,
+  th {
+    border-bottom: none !important;
+  }
+
+  tr:hover {
+    background-color: $gris-1 !important;
+    cursor: pointer;
+  }
+
+  tr:nth-child(even) {
+    background-color: $gris-3;
+    border-bottom: none !important;
+  }
+}
+
+.MuiTableCell-root {
+  padding: 10px !important;
+}
+
+//Columnresizer
+.siempreVisible {
+  width: 3px;
+  background-color: rgba(236, 246, 247, 1);
+  border-left: 1px solid lightgrey;
+  padding: 0 !important;
+}
+
+.hoverVisible {
+  background-color: transparent !important;
+}
+
+.hoverVisible:hover {
+  border-left: 2px solid $azul-4 !important;
+}
+
+.sinBorder {
+  background-color: transparent !important;
+  border-left: 0 !important;
+}

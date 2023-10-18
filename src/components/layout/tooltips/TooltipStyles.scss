@@ -1,0 +1,15 @@
+$azul-4: #023047;
+$blanco: #ffffff;
+
+.tooltip-style .MuiTooltip-tooltipArrow {
+  background-color: $blanco !important;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 5px;
+  color: $azul-4 !important;
+  font-weight: normal !important;
+  outline: 1px solid;
+  outline-color: $azul-4;
+}
+
+.tooltip-style .MuiTooltip-arrow {
+  color: $azul-4 !important;
+}
