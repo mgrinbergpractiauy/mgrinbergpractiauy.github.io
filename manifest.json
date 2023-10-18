@@ -1,7 +1,7 @@
 {
     "name": "PWA demo",
     "short_name": "PWA Demo",
-    "start_url": "index.html",
+    "start_url": "/index.html",
     "icons": [
       {
         "src": "app-logo.png",
