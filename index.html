@@ -13,6 +13,7 @@
     <div id="root"></div>
     
     <script>
+      console.log("hola ");
       if ("serviceWorker" in navigator) {
       window.addEventListener("load", function() {
       navigator.serviceWorker.register("/serviceWorkr.js").then(function(registration) {
