@@ -20,7 +20,7 @@ const  HomePage = () => {
       <TextField label="Texto3" variant="outlined" fullWidth />
       <Box mt={2} />
       <Button variant="contained" fullWidth>
-        Click
+        Guardar
       </Button>
     </Box>
   );

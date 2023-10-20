@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
 import { Avatar } from "@mui/material";
-import Navigation from "./Nav";
 
 const AppHeader = () => {
  
@@ -8,7 +7,7 @@ const AppHeader = () => {
 
   return (
     <header>
-      <Navigation/>
+      
     </header>
   );
 };

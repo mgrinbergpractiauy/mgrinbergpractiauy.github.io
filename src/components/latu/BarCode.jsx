@@ -1,10 +1,13 @@
 import { DecodeHintType, useZxing } from "react-zxing";
 import { useState, useEffect } from "react";
+import { maxHeight } from "@mui/system";
 
 const BarcodeScanner = () => {
   const [result, setResult] = useState("");
+  const [resultOk, setResultOk] = useState("inicial");
   const [devices, setDevices] = useState([]);
   const [deviceIds, setDeviceIds] = useState([]);
+  const [deviceId, setDeviceId] = useState("");
 
   useEffect(() => {
     const initializeDevices = async () => {
@@ -21,6 +24,7 @@ const BarcodeScanner = () => {
           // Utiliza todos los IDs de cámaras encontrados.
           const selectedDeviceIds = availableVideoDevices.map(device => device.deviceId);
           setDeviceIds(selectedDeviceIds);
+          setDeviceId((selectedDeviceIds.length>1)?selectedDeviceIds[1]:selectedDeviceIds[0]);
         }
       } catch (error) {
         // Maneja el error, esto podría deberse a problemas de permisos.
@@ -30,7 +34,7 @@ const BarcodeScanner = () => {
 
     initializeDevices();
   }, []);
-
+/*
   const hints = {
     // Array de todos los formatos disponibles
     POSSIBLE_FORMATS: [
@@ -53,16 +57,18 @@ const BarcodeScanner = () => {
       'UPC_EAN_EXTENSION',
     ],
   };
-
+*/
   const { ref } = useZxing({
-    deviceId: deviceIds, // Cambia deviceId a un arreglo de IDs
-    timeBetweenDecodingAttempts:10000,
+    deviceId: deviceId, // Cambia deviceId a un arreglo de IDs
+    timeBetweenDecodingAttempts:1000,
     constraints:{ video: { facingMode: 'environment' }, audio: false },
     onDecodeResult: (decodedResult) => {
-      setResult(decodedResult.getText());
+      console.log("decode ok");        
+      setResultOk(decodedResult.getText());
     },
     onDecodeError: (decodedError) => {
-        setResult(decodedError.message);    
+        console.log("decode error" + deviceId);        
+        setResult(decodedError.message);  
     },
     onError: (error) => {
         setResult(error);
@@ -73,10 +79,12 @@ const BarcodeScanner = () => {
 
   return (
     <div>
-      <video ref={ref} />
+      <video ref={ref} style={{ maxWidth: '100%', maxHeight: '100%' }} />
       <p>
         <span>Last result:</span>
         <span>{result}</span>
+        <span>Last result OK:</span>
+        <span>{resultOk}</span>
       </p>
     </div>
   );

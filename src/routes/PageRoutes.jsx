@@ -8,6 +8,9 @@ import SignatureCapture from "../components/latu/Signature";
 import GeoLocalization from "../components/latu/geo/GeoLocalization";
 
 const PageRoutes = () => {
+
+  
+
   return (
     <div>
       <Suspense fallback={<Spinner />}>

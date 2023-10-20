@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#317EFB"/>
-    <link rel="manifest" href="data:application/json;base64,ew0KICAgICJuYW1lIjogIlBXQSBkZW1vIiwNCiAgICAic2hvcnRfbmFtZSI6ICJQV0EgRGVtbyIsDQogICAgInN0YXJ0X3VybCI6ICIvaW5kZXguaHRtbCIsDQogICAgImljb25zIjogWw0KICAgICAgew0KICAgICAgICAic3JjIjogImFwcC1sb2dvLnBuZyIsDQogICAgICAgICJzaXplcyI6ICI2MDB4NjAwIiwNCiAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwNCiAgICAgICAgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIg0KICAgICAgfQ0KICAgIF0sDQogICAgImJhY2tncm91bmRfY29sb3IiOiAiIzNFNEVCOCIsDQogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsDQogICAgInRoZW1lX2NvbG9yIjogIiMyRTNBQTEiDQogIH0=">
+    <link rel="manifest" href="data:application/json;base64,ew0KICAgICJuYW1lIjogIlBXQSBkZW1vIiwNCiAgICAic2hvcnRfbmFtZSI6ICJQV0EgRGVtbyIsDQogICAgInN0YXJ0X3VybCI6ICJodHRwczovL21ncmluYmVyZ3ByYWN0aWF1eS5naXRodWIuaW8vcHdhL2luZGV4Lmh0bWwiLA0KICAgICJpY29ucyI6IFsNCiAgICAgIHsNCiAgICAgICAgInNyYyI6ICJodHRwczovL21ncmluYmVyZ3ByYWN0aWF1eS5naXRodWIuaW8vcHdhL2FwcC1sb2dvLnBuZyIsDQogICAgICAgICJzaXplcyI6ICI2MDB4NjAwIiwNCiAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwNCiAgICAgICAgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIg0KICAgICAgfQ0KICAgIF0sDQogICAgImJhY2tncm91bmRfY29sb3IiOiAiIzNFNEVCOCIsDQogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsDQogICAgInRoZW1lX2NvbG9yIjogIiMyRTNBQTEiDQogIH0=">
     <title>Latu-Instrumentos</title>
-    <script type="module" crossorigin src="/assets/index-3fe75ce6.js"></script>
-    <link rel="stylesheet" href="/assets/index-690deae7.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script type="module" crossorigin src="/assets/index-e726fb03.js"></script>
+    <link rel="stylesheet" href="/assets/index-39114120.css">
   </head>
   <body>
     <div id="root"></div>
@@ -15,7 +16,7 @@
     <script>
       if ("serviceWorker" in navigator) {
       window.addEventListener("load", function() {
-      navigator.serviceWorker.register("/serviceWorker.js").then(function(registration) {
+      navigator.serviceWorker.register("./serviceWorker.js").then(function(registration) {
       // Registration was successful
       console.log("ServiceWorker registration successful with scope: ", registration.scope);
       }, function(err) {

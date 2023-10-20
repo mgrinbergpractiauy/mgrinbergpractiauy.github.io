@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import SignatureCanvas from 'react-signature-canvas';
+import { Button, Stack, Box, TextField,Grid } from '@mui/material';
 
 const SignatureCapture = () => {
   const signatureRef = useRef(null);
@@ -44,7 +45,7 @@ const SignatureCapture = () => {
 
   return (
     <div>
-      <h1>Signature Capture</h1>
+      <h6>Firma digital</h6>
       <div style={containerStyle}>
         <SignatureCanvas
           ref={signatureRef}
@@ -53,8 +54,16 @@ const SignatureCapture = () => {
         />
       </div>
      
-      <button onClick={clearSignature}>Clear Signature</button>
-      <button onClick={saveSignature}>Save Signature</button>
+      <Button variant="contained" fullWidth onClick={saveSignature}>
+        Guardar
+      </Button>
+
+      <Box marginTop={2} />
+
+      <Button variant="contained" fullWidth onClick={clearSignature}>
+        Borrar
+      </Button>
+            
     </div>
   );
 }

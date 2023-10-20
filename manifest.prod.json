@@ -1,10 +1,10 @@
 {
     "name": "PWA demo",
     "short_name": "PWA Demo",
-    "start_url": "https://mgrinbergpractiauy.github.io/pwa/index.html",
+    "start_url": "/pwa/index.html",
     "icons": [
       {
-        "src": "https://mgrinbergpractiauy.github.io/pwa/app-logo.png",
+        "src": "app-logo.png",
         "sizes": "600x600",
         "type": "image/png",
         "purpose": "any maskable"
